@@ -1,14 +1,13 @@
 结巴分词(java版) jieba-analysis
 ===============================
 
-首先感谢jieba分词原作者[fxsjy](https://github.com/fxsjy)，没有他的无私贡献，我们也不会结识到结巴
-分词. 同时也感谢jieba分词java版本的实现团队[huaban](https://github.com/huaban)，他们的努力使得Java也能直接做出效果很棒的分词。
+这是 https://github.com/huaban/jieba-analysis 的 Fork 版，为什么要创建该 Fork 仓库？
 
-不过由于huaban已经没有再对java版进行维护，所以我自己对项目进行了开发。除了结巴分词(java版)所保留的原项目针对搜索引擎分词的功能(cut~forindex~、cut~forsearch~)，我加入了tfidf的关键词提取功能，并且实现的效果和python的jieba版本的效果一模一样！
+* 由于原来的仓库已经处于“荒废”状态，很多 PR 至今没有合并
+* 存在需要改进的地方，需要持续维护
+* 结巴分词使用的人很多，一个不断变好的 Java 库能造福大家
 
-
-（以下内容在基于[jieba-java版本README.md](https://github.com/huaban/jieba-analysis])的基础上，加入了对我新加入的tfidf关键词提取模块的相关说明)
-***
+欢迎大家提供 PR，我作为项目维护者，尽量及时查看并进行合并。
 
 简介
 ====
@@ -135,10 +134,13 @@ Memory：8GB
 
     ```
 
-使用本库项目
+致谢
 ============
 
--   [analyzer-solr](https://github.com/sing1ee/analyzer-solr) @sing1ee
+* 首先感谢jieba分词原作者[fxsjy](https://github.com/fxsjy)，没有他的无私贡献，我们也不会结识到结巴
+分词.
+* 同时也感谢jieba分词java版本的实现团队[huaban](https://github.com/huaban)，他们的努力使得Java也能直接做出效果很棒的分词。
+* 感谢 [Xinyao Qian](https://github.com/bluemapleman) 加入了 TF-IDF 关键词提取功能，实现的效果和 python 的 jieba 版本的效果一模一样！
 
 许可证
 ======
